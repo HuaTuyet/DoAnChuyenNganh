@@ -1,0 +1,25 @@
+.admin_menu {
+  background-color: $primary-color;
+  height: 65px;
+  &_list {
+    // display: flex;
+    // justify-content: space-between;
+    @include flex(space-between);
+    &_item {
+      display: inline-block;
+      margin-left: 30px;
+      line-height: 65px;
+    }
+    &_account {
+      // display: flex;
+      // align-items: center;
+      @include flex(start,center);
+      img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+    }
+  }
+}

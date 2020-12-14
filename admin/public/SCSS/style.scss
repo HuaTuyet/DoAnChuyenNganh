@@ -1,0 +1,222 @@
+// $primary-color: #9c7ca5; //80558b
+// $purple-weigh: #80558b;
+// $secondary-color: #ffb4a2;
+// html {
+//   font-family: "Roboto", sans-serif;
+// }
+// *,
+// *:before,
+// *:after {
+//   box-sizing: border-box;
+// }
+// img {
+//   display: block;
+//   max-width: 100%;
+// }
+// a {
+//   text-decoration: none;
+//   color: black;
+// }
+// .wrapper {
+//   max-width: 1440px;
+//   margin: 0 auto;
+// }
+// .container {
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   max-width: 1210px;
+//   margin: 0 auto;
+// }
+// .btn {
+//   padding: 10px 15px;
+//   border: none;
+//   border-radius: 5px;
+//   cursor: pointer;
+//   outline: none;
+//   font-size: 14px;
+//   display: inline-block;
+// }
+// .btn:hover,
+// .btn:active {
+//   opacity: 0.9;
+// }
+// .btn-pink {
+//   background-color: $secondary-color;
+// }
+// .title_large {
+//   font-size: 25px;
+//   font-weight: 400;
+// }
+
+// /*********LOGIN PAGE************/
+// /********************************/
+// .bgOpacity {
+//   width: 100vw;
+//   height: 100vh;
+//   background-color: gray;
+//   opacity: 0.3;
+//   position: relative;
+// }
+// .login {
+//   background-image: linear-gradient($secondary-color, $primary-color);
+//   width: 400px;
+//   height: 530px;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   &_image {
+//     margin-left: 160px;
+//     margin-top: 50px;
+//     margin-bottom: 20px;
+//     img {
+//       width: 80px;
+//       height: 80px;
+//       border-radius: 50%;
+//     }
+//   }
+//   &_content {
+//     &_text {
+//       font-size: 180%;
+//       text-align: center;
+//       font-weight: 500;
+//     }
+//     &_error {
+//       text-align: center;
+//       margin-bottom: 20px;
+//       &::before {
+//         font-family: "FontAwesome";
+//         content: "\f071";
+//         padding-right: 10px;
+//       }
+//     }
+//     form {
+//       width: 90%;
+//       margin: 0 auto;
+//       input {
+//         width: 100%;
+//         margin-bottom: 25px;
+//         height: 40px;
+//         background: none;
+//         padding-left: 15px;
+//         font-size: 16px;
+//         outline: none;
+//         border: none;
+//         border-bottom: 1px solid black;
+//         &::placeholder {
+//           color: rgb(111, 108, 112);
+//         }
+//         &.btn-submit {
+//           width: 100px;
+//           background-color: white;
+//           margin-left: 130px;
+//           padding: 0;
+//           border-bottom: none;
+//           border-radius: 15px;
+//           box-shadow: 2px 2px 3px 1px rgb(168, 166, 166);
+//           cursor: pointer;
+//         }
+//       }
+//     }
+//   }
+// }
+
+@import "base/variable.scss";
+@import "base/default.scss";
+
+@import "layout/login.scss";
+
+/*********ADMIN PAGE************/
+/********************************/
+@import "layout/admin/menu.scss"
+
+// .admin_header {
+//   background-color: $primary-color;
+//   height: 65px;
+//   &_list {
+//     display: flex;
+//     justify-content: space-between;
+//     &_item {
+//       display: inline-block;
+//       margin-left: 30px;
+//       line-height: 65px;
+//     }
+//     &_account {
+//       display: flex;
+//       align-items: center;
+//       img {
+//         height: 40px;
+//         width: 40px;
+//         border-radius: 50%;
+//         margin-right: 10px;
+//       }
+//     }
+//   }
+// }
+// .admin_content {
+//   height: calc(100vh - 65px);
+//   display: flex;
+//   &_left {
+//     background-color: $primary-color;
+//     width: 20%;
+//     &_list {
+//       &_item {
+//         height: 50px;
+//         line-height: 50px;
+//         text-align: center;
+//         border-bottom: 2px solid $purple-weigh;
+//         font-weight: 400;
+//         &:first-child {
+//           border-top: 2px solid $purple-weigh;
+//         }
+//         &:hover,
+//         &:visited {
+//           background-color: $purple-weigh;
+//         }
+//         a {
+//           color: white;
+//         }
+//       }
+//     }
+//   }
+//   &_right {
+//     flex-grow: 1;
+//     &_top {
+//       height: 50px;
+//       padding: 0 40px;
+//       padding-top: 10px;
+//     }
+//     &_bottom {
+//       padding: 20px 40px;
+//       table {
+//         width: 100%;
+//         height: 100%;
+//         background-color: whitesmoke;
+//         tr,
+//         td,
+//         th {
+//           border: 1px solid gray;
+//           padding: 5px;
+//         }
+//         td:last-child {
+//           text-align: center;
+//         }
+//         th {
+//           font-weight: 500;
+//           padding: 10px;
+//         }
+//       }
+//       &_inputText {
+//         input {
+//           width: 70%;
+//           height: 40px;
+//           background: none;
+//           padding-left: 15px;
+//           //font-size: 16px;
+//           outline: none;
+//           border: 1px solid red;  
+//         }
+//       }
+//     }
+//   }
+// }

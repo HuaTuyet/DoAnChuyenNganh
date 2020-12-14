@@ -1,0 +1,70 @@
+.bgOpacity {
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
+  opacity: 0.3;
+  position: relative;
+}
+.login {
+  background-image: linear-gradient($secondary-color, $primary-color);
+  width: 400px;
+  height: 530px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &_image {
+    margin-left: 160px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+  }
+  &_content {
+    &_text {
+      font-size: 180%;
+      text-align: center;
+      font-weight: 500;
+    }
+    &_error {
+      text-align: center;
+      margin-bottom: 20px;
+      &::before {
+        font-family: "FontAwesome";
+        content: "\f071";
+        padding-right: 10px;
+      }
+    }
+    form {
+      width: 90%;
+      margin: 0 auto;
+      input {
+        width: 100%;
+        margin-bottom: 25px;
+        height: 40px;
+        background: none;
+        padding-left: 15px;
+        font-size: 16px;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid black;
+        &::placeholder {
+          color: rgb(111, 108, 112);
+        }
+        &.btn-submit {
+          width: 100px;
+          background-color: white;
+          margin-left: 130px;
+          padding: 0;
+          border-bottom: none;
+          border-radius: 15px;
+          box-shadow: 2px 2px 3px 1px rgb(168, 166, 166);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
